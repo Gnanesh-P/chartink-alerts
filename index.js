@@ -31,13 +31,13 @@ app.post("/chartink-webhook", async (req, res) => {
 <b>📊 Chartink Alert</b>
 -----------------------
 <b>Stocks:</b> ${req.body.stocks || "N/A"}
-<b>Alert:</b> ${req.body.scanner_name || "N/A"}
+<b>Alert:</b> ${req.body.scan_name || "N/A"}
 <b>Trigger Time:</b> ${req.body.triggered_at}
 `;
         const alertMessage = `
       
 *Stock*: ${req.body.stocks || "N/A"}
-*Alert*: ${req.body.scanner_name || "N/A"}
+*Alert*: ${req.body.scan_name || "N/A"}
 *Time*: ${req.body.triggered_at}
         `;
 
